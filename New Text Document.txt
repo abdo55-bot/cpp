@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+int main() {
+    cout<<"Hello from our resturant \n";
+    cout<<"this is our menu \n";
+    cout<<"1- sandwich \n"<<"2- juice \n"<<"3- water \n"<<"4- chocolate \n";
+    cout<<"if you need any item please Write item number \n";
+    int food;
+    int price;
+    int num_of_items;
+    cin>>food;
+    switch(food) {
+        case 1:
+            cout<<"Your order is sandwich \n"
+                  "And the price is per piece is 10$ \n";
+            break;
+        case 2:
+            cout<<"Your order is juice \n"
+                  "And the price is per piece is 5$  \n";
+            break;
+        case 3:
+            cout<<"Your order is water \n"
+                  "And the price is per piece is 3$ \n";
+            break;
+        case 4:
+            cout<<"Your order is chocolate \n"
+                  "And the price is per piece is 12$ \n";
+            break;
+        default:
+            cout<<"this food is not exist in our resturant";
+
+    }
+    cout<<"How many of items you need? \n";
+    cin>>num_of_items;
+    if(food==1){
+        price=num_of_items*10;
+    } else if(food==2){
+        price=num_of_items*5;
+    } else if (food==3){
+        price=num_of_items*3;
+    } else {
+        price=num_of_items*12;
+    }
+    cout<<"total: "<<price<<"$";
+    
+
+
+}
